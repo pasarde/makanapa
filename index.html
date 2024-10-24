@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie Roulette</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Makan Apa Hari Ini?</h1>
+    <div class="card">
+      <div class="input-group">
+        <input type="text" id="makananInput" placeholder="Masukkan jenis makanan">
+        <button onclick="tambahMakanan()" class="btn-add">+</button>
+      </div>
+      
+      <h2>Daftar Makanan</h2>
+      <ul id="daftarMakanan"></ul>
+      
+      <button onclick="pilihMakanan()" class="btn-spin">Putar Roulette</button>
+      
+      <div class="result">
+        <h2>Makanan Terpilih</h2>
+        <p id="makananTerpilih"></p>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; DaWin. Assisted by Claude AI.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
